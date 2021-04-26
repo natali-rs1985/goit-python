@@ -78,7 +78,9 @@ def run_script():
 
 if __name__ == '__main__':
 
-    path = sys.argv[1]
-    path = Path(path)
+    path = Path(r'C:\GOIT-Python\goit-python\Homework.4\Files')
+
+    #path = sys.argv[1]
+    #path = Path(path)
 
     run_script()
