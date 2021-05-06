@@ -180,7 +180,9 @@ def sort_by_extension(path, files):
             move_file(path, file, file_name, file_ext, file_type)
 
 
-def sort_files(path):
+def sort_files():
+    path = sys.argv[1]
+    path = Path(path)
     files = find_files(path)
     if files:
         sort_by_extension(path, files)
@@ -190,7 +192,5 @@ def sort_files(path):
 
 
 if __name__ == '__main__':
-    src_path = sys.argv[1]
-    src_path = Path(src_path)
 
-    sort_files(src_path)
+    sort_files()
