@@ -6,7 +6,7 @@ class Field:
 
 
 class Name(Field):
-    __slots__ = ["name"]
+    #__slots__ = ["name"]
 
     def __init__(self, name):
         self.name = name
@@ -16,7 +16,7 @@ class Name(Field):
 
 
 class Phone(Field):
-    __slots__ = ["phone"]
+    #__slots__ = ["phone"]
 
     def __init__(self, phone):
         self.phone = phone
@@ -26,14 +26,14 @@ class Phone(Field):
 
 
 class Record:
-    __slots__ = ["name", "phones"]
+    #__slots__ = ["name", "phones"]
 
     def __init__(self, name):
         self.name = Name(name)
         self.phones = []
 
-    def __repr__(self):
-        return "{0}".format(self.phones)
+    #def __repr__(self):
+        #return "{0}".format(self.phones)
 
     def add_phone(self, phone):
         self.phones.append(Phone(phone))
