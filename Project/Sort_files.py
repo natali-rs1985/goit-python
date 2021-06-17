@@ -1,4 +1,3 @@
-import sys
 import os.path
 from pathlib import Path
 import re
@@ -186,11 +185,3 @@ def sort_files(path):
         print('Path does not exist')
     find_dirs(path)
 
-
-if __name__ == '__main__':
-    # src_path = sys.argv[1]
-    # src_path = Path(src_path)
-
-    src_path = Path(input('Enter folder to sort in format Disc:\\path...:   '))
-
-    sort_files(src_path)
